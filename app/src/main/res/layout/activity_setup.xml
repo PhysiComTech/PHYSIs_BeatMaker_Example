@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SetupActivity">
+
+    <!-- BLE Connected -->
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="연결"/>
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="연결 종료"/>
+
+    <ProgressBar
+        android:id="@+id/pgb_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <!-- Sound Setter -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PHYSIs Beat Maker 사운드 설정"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="터치 센서 1 "/>
+
+    <Spinner
+        android:id="@+id/sp_beat_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="터치 센서 2 "/>
+
+    <Spinner
+        android:id="@+id/sp_beat_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="터치 센서 3 "/>
+
+    <Spinner
+        android:id="@+id/sp_beat_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="터치 센서 4 "/>
+
+    <Spinner
+        android:id="@+id/sp_beat_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
